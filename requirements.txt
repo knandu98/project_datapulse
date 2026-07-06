@@ -1,0 +1,13 @@
+# Runtime + dev dependencies (mirror of pyproject.toml for convenience).
+# Prefer: pip install -e ".[dev]"
+requests>=2.31
+pandas>=2.1
+pyarrow>=14.0
+duckdb>=0.10
+pandera>=0.18
+boto3>=1.34
+pyyaml>=6.0
+streamlit>=1.31
+altair>=5.1
+pytest>=8.0
+ruff>=0.5

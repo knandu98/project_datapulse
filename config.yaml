@@ -1,0 +1,44 @@
+# DataPulse configuration.
+# Everything that tunes the pipeline lives here so behaviour is reproducible and
+# swappable without touching code.
+
+source:
+  name: open-meteo
+  url: https://api.open-meteo.com/v1/forecast
+  # Natural key for a record is (latitude, longitude, time).
+  params:
+    latitude: 52.52
+    longitude: 13.41
+    hourly:
+      - temperature_2m
+      - relative_humidity_2m
+      - wind_speed_10m
+      - pressure_msl
+    timezone: UTC
+    past_days: 1
+    forecast_days: 1
+
+lake:
+  raw_prefix: raw/
+  processed_prefix: processed/
+  # Directory containing the Terraform project; the pipeline reads
+  # `terraform output -json` from here to discover bucket names + endpoint.
+  terraform_dir: infra
+
+storage:
+  duckdb_path: data/datapulse.duckdb
+  local_raw_dir: data/raw
+  local_processed_dir: data/processed
+
+observability:
+  # Freshness SLA: newest record must be at most this many minutes old.
+  freshness_sla_minutes: 180
+  # Number of prior runs used to build rolling baselines.
+  rolling_window: 20
+  # z-score cutoff used to flag volume + distribution anomalies.
+  zscore_threshold: 3.0
+  # Minimum history (number of prior runs) before anomaly flags are trusted.
+  min_history_for_anomaly: 5
+
+reports:
+  latest_run_path: reports/latest_run.json

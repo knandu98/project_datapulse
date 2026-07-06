@@ -1,0 +1,14 @@
+# Copy to terraform.tfvars and adjust. NEVER commit real secrets.
+
+use_localstack        = true
+aws_region            = "us-east-1"
+localstack_endpoint   = "http://localhost:4566"
+raw_bucket_name       = "datapulse-raw"
+processed_bucket_name = "datapulse-processed"
+expire_raw_after_days = 30
+
+# --- Optional GitHub provider (leave disabled unless you need it) ---------------
+enable_github_provider = false
+# github_token         = "ghp_xxx"   # prefer: export TF_VAR_github_token=...
+# github_owner         = "your-user"
+# github_repository    = "project_datapulse"
