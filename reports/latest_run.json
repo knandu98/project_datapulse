@@ -1,11 +1,11 @@
 {
-  "run_id": "8deba542ea13",
-  "run_ts": "2026-08-23 01:40:28.471485+00:00",
+  "run_id": "782cca9cead9",
+  "run_ts": "2026-08-23 03:54:24.870969+00:00",
   "status": "warning",
   "rows_ingested": 48,
   "checks_passed": 13,
   "checks_failed": 0,
-  "anomalies_found": 3,
+  "anomalies_found": 1,
   "error": null,
   "total_rows_in_lake": 1200,
   "contract": {
@@ -16,18 +16,18 @@
   },
   "metrics": [
     {
-      "run_id": "8deba542ea13",
-      "run_ts": "2026-08-23 01:40:28.471485+00:00",
+      "run_id": "782cca9cead9",
+      "run_ts": "2026-08-23 03:54:24.870969+00:00",
       "metric": "freshness",
       "column_name": "minutes",
-      "value": -1279.52547525,
+      "value": -1145.5854838500002,
       "baseline": 180.0,
       "zscore": NaN,
       "is_anomaly": false
     },
     {
-      "run_id": "8deba542ea13",
-      "run_ts": "2026-08-23 01:40:28.471485+00:00",
+      "run_id": "782cca9cead9",
+      "run_ts": "2026-08-23 03:54:24.870969+00:00",
       "metric": "volume",
       "column_name": "row_count",
       "value": 48.0,
@@ -36,8 +36,8 @@
       "is_anomaly": false
     },
     {
-      "run_id": "8deba542ea13",
-      "run_ts": "2026-08-23 01:40:28.471485+00:00",
+      "run_id": "782cca9cead9",
+      "run_ts": "2026-08-23 03:54:24.870969+00:00",
       "metric": "schema_drift",
       "column_name": "columns",
       "value": 0.0,
@@ -46,48 +46,48 @@
       "is_anomaly": false
     },
     {
-      "run_id": "8deba542ea13",
-      "run_ts": "2026-08-23 01:40:28.471485+00:00",
+      "run_id": "782cca9cead9",
+      "run_ts": "2026-08-23 03:54:24.870969+00:00",
       "metric": "distribution_drift",
       "column_name": "temperature_2m",
       "value": 16.756249999999998,
-      "baseline": 19.105416666666663,
-      "zscore": -4.553217991351702,
+      "baseline": 18.989374999999995,
+      "zscore": -3.0714552659551315,
       "is_anomaly": true
     },
     {
-      "run_id": "8deba542ea13",
-      "run_ts": "2026-08-23 01:40:28.471485+00:00",
+      "run_id": "782cca9cead9",
+      "run_ts": "2026-08-23 03:54:24.870969+00:00",
       "metric": "distribution_drift",
       "column_name": "relative_humidity_2m",
       "value": 65.95833333333333,
-      "baseline": 66.82395833333335,
-      "zscore": -0.19171185568568985,
+      "baseline": 66.32708333333333,
+      "zscore": -0.09200646798631412,
       "is_anomaly": false
     },
     {
-      "run_id": "8deba542ea13",
-      "run_ts": "2026-08-23 01:40:28.471485+00:00",
+      "run_id": "782cca9cead9",
+      "run_ts": "2026-08-23 03:54:24.870969+00:00",
       "metric": "distribution_drift",
       "column_name": "wind_speed_10m",
       "value": 13.964583333333332,
-      "baseline": 8.7609375,
-      "zscore": 4.115277501581532,
-      "is_anomaly": true
+      "baseline": 9.034062500000001,
+      "zscore": 2.9079465557725146,
+      "is_anomaly": false
     },
     {
-      "run_id": "8deba542ea13",
-      "run_ts": "2026-08-23 01:40:28.471485+00:00",
+      "run_id": "782cca9cead9",
+      "run_ts": "2026-08-23 03:54:24.870969+00:00",
       "metric": "distribution_drift",
       "column_name": "pressure_msl",
       "value": 1016.3895833333332,
-      "baseline": 1008.5813541666666,
-      "zscore": 3.936950835996414,
-      "is_anomaly": true
+      "baseline": 1009.1101041666667,
+      "zscore": 2.8957018513705686,
+      "is_anomaly": false
     },
     {
-      "run_id": "8deba542ea13",
-      "run_ts": "2026-08-23 01:40:28.471485+00:00",
+      "run_id": "782cca9cead9",
+      "run_ts": "2026-08-23 03:54:24.870969+00:00",
       "metric": "contract_violations",
       "column_name": "checks_failed",
       "value": 0.0,
